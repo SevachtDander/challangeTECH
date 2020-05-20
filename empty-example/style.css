@@ -7,8 +7,23 @@
     font-family: spider;
     color: white;
     text-align:center;
+    text-shadow: -3px -3px 0 red, 3px -3px 0 red, -3px 3px 0 red, 3px 3px 0 red;
 }
 html
 {
     background-color: black;
+}
+.flames{
+    visibility: hidden;
+    background-image: url("assets/vuur.gif");
+    height:100%;
+    background-size: cover;
+}
+.video_drummer{
+    visibility: hidden;
+    display: block;
+    margin: 0 auto;
+}
+body{
+    height:100vh;
 }

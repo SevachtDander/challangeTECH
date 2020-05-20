@@ -3,11 +3,12 @@
     src: url(assets/Spiderfingers.ttf);
   }
 .penis{
-    font-size: 10rem;
+    font-size: 7rem;
     font-family: spider;
     color: white;
     text-align:center;
     text-shadow: -3px -3px 0 red, 3px -3px 0 red, -3px 3px 0 red, 3px 3px 0 red;
+    grid-row: 1;
 }
 html
 {
@@ -17,13 +18,30 @@ html
     visibility: hidden;
     background-image: url("assets/vuur.gif");
     height:100%;
+    width: 100vw;
     background-size: cover;
+    grid-row: 1;
+    grid-column: 1;
+    mix-blend-mode: screen;
+    z-index: 2;
+
 }
 .video_drummer{
     visibility: hidden;
     display: block;
     margin: 0 auto;
+    grid-row: 1;
+    grid-column: 1;
+    scale: 0.75;
+
 }
 body{
     height:100vh;
 }
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+

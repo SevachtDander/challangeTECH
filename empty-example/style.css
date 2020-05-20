@@ -1,0 +1,14 @@
+@font-face {
+    font-family: spider;
+    src: url(assets/Spiderfingers.ttf);
+  }
+.penis{
+    font-size: 10rem;
+    font-family: spider;
+    color: white;
+    text-align:center;
+}
+html
+{
+    background-color: black;
+}

@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(710, 200);
+  createCanvas(100, 900);
 
   // Create an Audio input
   mic = new p5.AudioIn();
@@ -7,11 +7,11 @@ function setup() {
   // start the Audio Input.
   // By default, it does not .connect() (to the computer speakers)
   mic.start();
-  document.querySelector(".penis").innerHTML ="kaka";
+ 
 }
 
 function draw() {
-  background(200);
+  background(000);
 
   // Get the overall volume (between 0 and 1.0)
   let vol = mic.getLevel();
@@ -19,15 +19,17 @@ function draw() {
   if (vol>0.2)
   {
     playviddy();
+    document.querySelector(".penis").innerHTML ="Almost the voice of a trash metal god";
  
   }
   if (vol<0.01)
   {
     pauzeviddy();
+    document.querySelector(".penis").innerHTML ="Train your metal voice";
  
   }
   
-  fill(127);
+  fill(400);
   stroke(0);
 
   // Draw an ellipse with height based on volume
